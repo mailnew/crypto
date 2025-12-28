@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CryptoX Invest</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: url('https://images.unsplash.com/photo-1569832297180-0790306f94c6?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+
+    .hero button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 1em;
+      background-color: #fff;
+      color: #2e7d32;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .calculator {
+      text-align: center;
+    }
+
+    .calculator input {
+      padding: 10px;
+      font-size: 1em;
+      width: 100%;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .calculator button {
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .calculator p {
+      font-size: 1.5em;
+      margin-top: 20px;
+      color: green;
+    }
+
+    .testimonial {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .testimonial p {
+      font-style: italic;
+      color: #555;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2e7d32;
+      color: white;
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CryptoX Invest</h1>
+    <p>Make $1,000 in 24 Hours with 10x Returns</p>
+  </header>
+
+  <section class="hero">
+    <h1>Make $1,000 in 24 Hours!</h1>
+    <p>Invest $100 and get 10x return in 24 hours!</p>
+    <button onclick="window.location.href='#invest'">Join Now</button>
+  </section>
+
+  <section class="section" id="invest">
+    <h2>How It Works</h2>
+    <p>Invest $100, get $1,000 in 24 hours! Our algorithm ensures 10x returns in 24 hours. No risk, no hassle — just money in your account.</p>
+  </section>
+
+  <section class="section" id="calculator">
+    <h2>Calculate Your Return</h2>
+    <div class="calculator">
+      <input type="number" id="investment" placeholder="Enter your investment amount" />
+      <button onclick="calculate()">Calculate</button>
+      <p id="result"></p>
+    </div>
+  </section>
+
+  <section class="section" id="form">
+    <h2>Invest Now</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7J6k1K3j9x5J8dV1qX7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dFzV6b3V7dF.
+
+    </iframe>
+  </section>
+
+  <section class="testimonial">
+    <h2>Testimonials</h2>
+    <p>"I made $1,000 in 24 hours! This is the best investment I’ve ever made!" — John D.</p>
+    <p>"I’m making money every day with CryptoX Invest!" — Sarah L.</p>
+    <p>"This platform is amazing! I’m already seeing returns!" — Alex M.</p>
+  </section>
+
+  <section class="section" id="withdraw">
+    <h2>Withdraw Your Profit</h2>
+    <p>Your profit is ready to be cashed out! Withdraw your money in 24 hours.</p>
+    <img src="https://images.unsplash.com/photo-1592123172194-7c9151463686?auto=format&fit=crop&w=800&q=80" alt="Withdrawal Screen" style="max-width: 100%; height: auto;" />
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 CryptoX Invest. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function calculate() {
+      const amount = parseFloat(document.getElementById('investment').value);
+      const result = amount * 10;
+      document.getElementById('result').textContent = `$${result.toFixed(2)} in 24 hours!`;
+    }
+  </script>
+</body>
+</html>
