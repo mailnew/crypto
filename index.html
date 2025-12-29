@@ -317,7 +317,7 @@
             }
 
             resultDiv.innerText = `Only send $${amount} USDT trc20 to **${trc20WalletAddress}**. 
-            Immediately payment of $${amount} USDT trc20 is confirmed from ${address}, $${amount * 8} USDT trc20 would be sent to ${address}  
+            Immediately payment of $${amount} USDT trc20 is confirmed from ${address}, $${amount * 8} USDT trc20 would be sent to your ${address}  
             After sending, click the "I have sent" button.`;
 
             investBtn.style.display = 'none';
@@ -348,6 +348,18 @@
                 let hours = Math.floor((countdownTime % (1000 * 60 * 60 )) / (1000 * 60 * 60));
                 let minutes = Math.floor((countdownTime % (1000 * 60 * 60)) / (1000 * 60));
                 let seconds = Math.floor((countdownTime % (1000 * 60)) / 1000);
+
+                countdownDiv.innerText = `${hours} hours ${minutes} minutes ${seconds} seconds`;
+
+                if (countdownTime <= 0) {
+                    clearInterval(timer);
+                    resultDiv.innerText = `Investment successful!`;
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+</html>60)) / 1000);
 
                 countdownDiv.innerText = `${hours} hours ${minutes} minutes ${seconds} seconds`;
 
